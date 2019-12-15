@@ -1,6 +1,8 @@
 describe "BankAccount" do
 
   let(:avi) { BankAccount.new("Avi") }
+  let(:terrance) { BankAccount.new("Terrance") }
+
 
   describe "#initialize" do
     it "can initialize a Bank Account" do
