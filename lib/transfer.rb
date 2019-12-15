@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
   def initialize(sender, receiver, amount)
@@ -29,5 +30,6 @@ class Transfer
       @receiver.withdrawal(@amount)
       @status="reversed"
     end
+     binding.pry
   end
 end
