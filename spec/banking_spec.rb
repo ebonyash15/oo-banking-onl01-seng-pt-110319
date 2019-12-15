@@ -1,8 +1,6 @@
 describe "BankAccount" do
 
   let(:avi) { BankAccount.new("Avi") }
-  let(:terrance) { BankAccount.new("Terrance") }
-
 
   describe "#initialize" do
     it "can initialize a Bank Account" do
@@ -56,8 +54,6 @@ describe "BankAccount" do
     it "can close its account" do
       avi.close_account
       expect(avi.status).to eq("closed")
-
-      terrance.close_account
     end
   end
 end
