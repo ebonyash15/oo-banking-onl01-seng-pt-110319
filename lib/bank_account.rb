@@ -10,11 +10,11 @@ class BankAccount
     @balance+=amount
   end
   def withdrawal(amount)
-    if @balance>=amount
+  #  if @balance>=amount
       @balance-=amount
-    else
-      p "Insufficient funds."
-    end
+  #  else
+  #    p "Insufficient funds."
+  #  end
   end
   def display_balance
     "Your balance is $#{@balance}."
