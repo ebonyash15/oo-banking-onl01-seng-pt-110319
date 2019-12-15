@@ -8,7 +8,7 @@ class Transfer
     @transaction= "#{@sender} #{@receiver} #{@amount}"
   end
   def valid?(amount=0)
-    @sender.valid? && @receiver.valid?
+    @sender.valid?(amount) && @receiver.valid?(amount)
   end
   def execute_transaction
     if @status=="complete"
