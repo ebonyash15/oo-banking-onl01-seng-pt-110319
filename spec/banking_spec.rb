@@ -54,6 +54,8 @@ describe "BankAccount" do
     it "can close its account" do
       avi.close_account
       expect(avi.status).to eq("closed")
+
+      terrance.close_account
     end
   end
 end
