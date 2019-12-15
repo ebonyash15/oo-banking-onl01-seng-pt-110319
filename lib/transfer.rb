@@ -30,6 +30,8 @@ class Transfer
       @sender.balance+=(@amount)
       @receiver.balance-=(@amount)
       @status="reversed"
+    else
+      p "Transaction not completed, cannot be reversed."
     end
      binding.pry
   end
