@@ -25,7 +25,6 @@ class Transfer
     end
   end
   def reverse_transfer
-    binding.pry
     if @status="complete"
       @sender.balance+=(@amount)
       @receiver.balance-=(@amount)
@@ -33,6 +32,5 @@ class Transfer
     else
       p "Transaction not completed, cannot be reversed."
     end
-     binding.pry
   end
 end
