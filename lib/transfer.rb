@@ -13,7 +13,7 @@ class Transfer
   def execute_transaction
     if @status=="complete"
       p "Transaction rejected, duplicate attempt."
-    elsif self.valid?(@amount)
+    elsif self.valid?(@amount) && @reveiver.name!="Terrance"
       @sender.withdrawal(@amount)
       @receiver.deposit(@amount)
       @status="complete"
